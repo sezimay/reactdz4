@@ -36,15 +36,11 @@ const CounterWithStore = () => {
       <button onClick={() => dispatch(increment(1))}>+</button>
       <button onClick={() => dispatch(decrement(1))}>-</button>
       <h2>{count2}</h2>
-      <button
-        onClick={() => dispatch(increment(Math.ceil(Math.random() * 100)))}
-      >
-        RND+
+      <button onClick={() => dispatch(increment(Math.random() * 100))}>
+        rnd+
       </button>
-      <button
-        onClick={() => dispatch(decrement(Math.ceil(Math.random() * 100)))}
-      >
-        RND-
+      <button onClick={() => dispatch(decrement(Math.random() * 100))}>
+        rnd-
       </button>
     </div>
   );
